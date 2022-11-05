@@ -7,8 +7,9 @@ using namespace std;
 vector<int> primes;
 
 int crivo(int i, int len){
-
-    while(i < len){
+    time_t init = time(NULL);
+    while(time(NULL) - init < 60){
+        //cout << time(NULL) - init << endl;
         if(i == 2){
             primes.push_back(2);
             i++;
@@ -29,9 +30,7 @@ int crivo(int i, int len){
 int main()
 {
     time_t init = time(NULL);
-    while(time(NULL) - init < 60){
-        crivo(2, 10e7);
-    }
+    crivo(2, 10e7);
     cout << primes.size() << endl;
     /*
     for(int i = 0; i < primes.size(); i++){

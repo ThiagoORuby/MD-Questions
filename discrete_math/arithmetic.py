@@ -1,6 +1,12 @@
-from decomposite import decompose
+from discrete_math.decomposite import decompose
 
-def mdc(a, b):
+# Euclidian MDC
+def euclidian_mdc(a, b):
+    if(not b): return a
+    return euclidian_mdc(b, a % b)
+
+# MDC with Decomposition
+def decomp_mdc(a, b):
     da = decompose(a)
     db = decompose(b)
 
@@ -17,9 +23,10 @@ def mdc(a, b):
     mdc = 1
     for i in dmdc.keys():
         mdc *= i**dmdc[i]
-    print(mdc)
+    return mdc
 
-def mmc(a, b):
+# MMC
+def decomp_mmc(a, b):
     da = decompose(a)
     db = decompose(b)
 
@@ -36,11 +43,23 @@ def mmc(a, b):
     mmc = 1
     for i in dmmc.keys():
         mmc *= i**dmmc[i]
-    print(mmc)
+    return mmc
 
+# Extended Euclides
+def extended_euclides(a, b):
+    #if (r == 0): return
+    (r0, m0, n0) = a, 1, 0
+    (r1, m1, n1) = b, 0, 1
 
-mmc(84, 450)
-mdc(84, 450)
-
-
+    while(r0 % r1 > 0):
+        q = r0 // r1
+        r0, r1 = r1, r0 % r1
+        m0, m1 = m1, m0 - m1*q
+        n0, n1 = n1, n0 - n1*q
     
+    return m1, n1
+
+# Modular inverse
+def modinv(a, b):
+    m1, _ = extended_euclides(a, b)
+    return m1

@@ -1,4 +1,4 @@
-from fermat import brute_force
+from discrete_math.primes import brute_force
 
 def next_prime(n):
     if(brute_force(n)): return n
@@ -24,6 +24,3 @@ def decompose(n):
     decomp =  dict()
     get_array(n, 2, decomp)
     return decomp
-
-d = decompose(456598)
-print(d)
