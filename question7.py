@@ -1,7 +1,7 @@
 # QUESTION 7
 # INVERSE Of A MOD B
 from discrete_math.arithmetic import modinv
-print(">>>>  ENCONTRANDO A INVERSA DE A MOD B")
+print(">>>>  ENCONTRANDO O INVERSO DE A MOD B")
 print(" ")
 
 a = int(input("Digite um numero para A: "))

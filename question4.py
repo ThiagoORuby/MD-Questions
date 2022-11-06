@@ -1,10 +1,7 @@
 # QUESTION 4
-# MDC MMC
-
+# MDC AND MMC
 
 from discrete_math.arithmetic import decomp_mdc, decomp_mmc
-
-
 
 print("##### MMC E MDC #####\n")
 
@@ -13,4 +10,4 @@ number2 = int(input("Digite o segundo número: "))
 res_mdc = decomp_mdc(number1,number2)
 res_mmc = decomp_mmc(number1,number2)
 
-print(f"MDC :{res_mdc}, MMC : {res_mmc}")
+print(f"\nMDC: {res_mdc}, MMC : {res_mmc}")

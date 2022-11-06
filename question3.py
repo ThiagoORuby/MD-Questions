@@ -7,8 +7,12 @@ print("##### DECOMPOSIÇÃO EM PRIMOS #####\n")
 
 number = int(input("Digite o número: "))
 
-res = decompose(number)
+res_dict = decompose(number)
 
-print(f"{res}")
+res_string = ""
+for key, value in res_dict.items(): res_string += f"{key}^{value} * "
+
+print(f'\nO número {number} pode ser decomposto da seguinte forma:')
+print(res_string[:-2])
 
 
