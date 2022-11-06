@@ -10,4 +10,4 @@ b = int(input("Digite um numero para B: "))
 mdc = euclidian_mdc(a, b)
 
 print(" ")
-print(f"O mdc de {a} e {b} é {mdc}")
+print(f"O mdc de {a} e {b} eh igual a {mdc}")

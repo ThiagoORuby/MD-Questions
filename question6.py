@@ -9,6 +9,6 @@ print(" ")
 a = int(input("Digite um numero para A: "))
 b = int(input("Digite um numero para B: "))
 m, n = extended_euclides(a, b)
-print(" ")
 
-print(f"Os coeficientes s e t são iguais a {m} e {n}, RESPECTIVAMENTE")
+print(" ")
+print(f"Os coeficientes s e t são iguais a {m} e {n}, RESPECTIVAMENTE!")
