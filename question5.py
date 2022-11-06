@@ -2,7 +2,7 @@
 # MDC OF TWO NUMBERS
 from discrete_math.arithmetic import euclidian_mdc
 
-print("###  ENCONTRANDO O MDC DE DOIS VALORES A & B ###")
+print(">>>>  ENCONTRANDO O MDC DE DOIS VALORES A & B")
 print(" ")
 
 a = int(input("Digite um numero para A: "))
