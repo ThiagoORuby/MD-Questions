@@ -9,6 +9,6 @@ number = int(input("Digite o número: "))
 
 res = decompose(number)
 
-print("{res}")
+print(f"{res}")
 
 
