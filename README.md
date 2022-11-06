@@ -2,7 +2,7 @@
 
 Repository with the solutions to the Discrete Math practice activity questions.
 
-_Thiago Ribeiro_
-_José Endson_
-_Donvicton Monteiro_
-_Edeilson Costa_
+_Thiago Ribeiro_\
+_José Endson_\
+_Donvicton Monteiro_\
+_Edeilson Costa_\
