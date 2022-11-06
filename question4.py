@@ -2,7 +2,10 @@
 # MDC MMC
 
 
-from discrete_math.decomposite import arithmetic
+from discrete_math.arithmetic import decomp_mdc
+
+from discrete_math.arithmetic import decomp_mmc
+
 
 print("##### MMC E MDC #####\n")
 
