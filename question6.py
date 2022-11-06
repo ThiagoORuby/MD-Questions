@@ -2,7 +2,7 @@
 # FIND THE COEFFICIENTS S AND T
 from discrete_math.arithmetic import extended_euclides
 
-print(">>  CONEFICIENTES S & T DA COMBINACAO LINEAR  <<")
+print(">>  COEFICIENTES S & T DA COMBINACAO LINEAR  <<")
 print(">>  COMBINACAO LINEAR => mdc(a, b) = s * a + t * b <<")
 print(" ")
 
